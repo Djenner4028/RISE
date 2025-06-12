@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rise | Shirts & Sweaters</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd6e?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 1rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    section.products {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section.products h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      color: #222;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-8px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-details h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .product-details p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .product-details span {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #f39c12;
+    }
+
+    section.contact {
+      background: #222;
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    section.contact h3 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    section.contact p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    section.contact a {
+      background: #f39c12;
+      color: #222;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    section.contact a:hover {
+      background: #d17c0e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: #f8f9fa;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+        padding: 0.7rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rise</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>RISE — Shirts & Sweaters</h2>
+  </section>
+
+  <section class="products" id="products">
+    <h3>Our Collection</h3>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://i.etsystatic.com/27208135/r/il/45059a/2965872441/il_570xN.2965872441_5v6e.jpg" alt="Classic White Shirt" />
+        <div class="product-details">
+          <h4>Classic White Shirt</h4>
+          <p>Timeless style made with premium cotton.</p>
+          <span>$24.99</span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://gabeclothing.ca/cdn/shop/files/9a.webp?v=1685670768&width=1920" alt="Cozy Knit Sweater" />
+        <div class="product-details">
+          <h4>Crew Neck Sweater</h4>
+          <p>Stay warm and stylish with this soft fit.</p>
+          <span>$49.99</span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBu3Kf4wcXjLntLK46pc3IL6nXTrp0ifS-g&s" alt="Casual Denim Shirt" />
+        <div class="product-details">
+          <h4>Casual Blue Shirt</h4>
+          <p>A colourful spin on the classic white.</p>
+          <span>$24.99</span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://gabeclothing.ca/cdn/shop/files/9a.webp?v=1685670768&width=1920" alt="Chunky Sweater" />
+        <div class="product-details">
+          <h4>Casual Sweater</h4>
+          <p>Perfect design and fit to keep you warm.</p>
+          <span>$49.99</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Contact Us</h3>
+    <p>Questions? Want to place a custom order? Reach out to Rise -
+      davinj4044@gshare.blackgold.ca</p>
+    <a href="davinj4044@gshare.blackgold.ca>Email Us</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Rise Apparel. All rights reserved.
+  </footer>
+
+</body>
+</html>
